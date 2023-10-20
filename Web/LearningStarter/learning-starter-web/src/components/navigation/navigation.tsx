@@ -59,6 +59,27 @@ const navigation: NavigationItem[] = [
     },
   },
   {
+    text: "Counter",
+    hide: false,
+    nav: {
+      to: routes.counter,
+    },
+  },
+  {
+    text: "Minimum",
+    hide: false,
+    nav: {
+      to: routes.minimum,
+    },
+  },
+  {
+    text: "Task List",
+    hide: false,
+    nav: {
+      to: routes.taskList,
+    },
+  },
+  {
     text: "User",
     hide: false,
     nav: {

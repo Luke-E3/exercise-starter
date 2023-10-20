@@ -3,4 +3,7 @@ export const routes = {
   root: `/`,
   home: `/home`,
   user: `/user`,
+  counter: `/counter`,
+  minimum: `/minimum`,
+  taskList: `/task-list`,
 };

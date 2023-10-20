@@ -5,6 +5,9 @@ import { useUser } from "../authentication/use-auth";
 import { UserPage } from "../pages/user-page/user-page";
 import { PageWrapper } from "../components/page-wrapper/page-wrapper";
 import { routes } from ".";
+import { CountersExercise } from "../exercises/counter";
+import { MinimumExercise } from "../exercises/minimum";
+import { TaskListExercise } from "../exercises/task-list";
 
 //This is where you will tell React Router what to render when the path matches the route specified.
 export const Routes = () => {
@@ -21,6 +24,10 @@ export const Routes = () => {
           <Route path={routes.user} element={<UserPage />} />
           {/* Going to route "localhost:5001/" will go to homepage */}
           <Route path={routes.root} element={<Navigate to={routes.home} />} />
+
+          <Route path={routes.counter} element={<CountersExercise />} />
+          <Route path={routes.minimum} element={<MinimumExercise />} />
+          <Route path={routes.taskList} element={<TaskListExercise />} />
 
           {/* This should always come last.  
             If the path has no match, show page not found */}
