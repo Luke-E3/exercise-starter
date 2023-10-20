@@ -1,17 +1,10 @@
 import { Button, Container, Title } from "@mantine/core";
-import { routes } from "../routes/index";
-import { css } from "@emotion/react";
 
 export interface ExerciseCounterData {
   id: number;
   startingValue: number;
   name: string;
 }
-
-const breadcrumbs = [
-  { title: "Exercises", url: routes.root },
-  { title: "Counters" },
-];
 
 const counterData: ExerciseCounterData[] = [
   { id: 1, startingValue: 0, name: "Counter α" },
@@ -29,10 +22,3 @@ export const CountersExercise = () => {
     </Container>
   );
 };
-
-const styles = css`
-  .counter-label {
-    font-size: 12pt;
-    color: #333;
-  }
-`;
